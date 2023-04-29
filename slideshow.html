@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <title>Lil Baby Slideshow</title>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="images/baby.webp" alt="click here to return to home page" title="Click Here"></a>
+        <h2>Lil Baby Slideshow</h2>
+            <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+            <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+            <nav id="navigation" data-visible="false">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="imggallery.html">Image Gallery</a></li>
+                    <li><a href="videogallery.html">Video Gallery</a></li>
+                    <li><a href="slideshow.html">Image Carousel</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/download-1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/download-2.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/download-3.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/download-4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/download.jpg" alt=""></div>
+                <div class="prev" onclick= "showImage(1)"><i class="fa-solid fa-forward"></i></div>
+                <div class="next" onclick= "showImage(-1)"><i class="fa-solid fa-backward"></i></div>
+            </div> 
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <p>&copy; <span id="copyright"></span> Teo Berbic</p>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

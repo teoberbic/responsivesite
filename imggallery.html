@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/img-gallery.css">
+    
+    
+    <title>Drake Image Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/download-1.jpg" alt="click here to return to home page" title="Click Here"></a>
+        <h2>Images of the two</h2>
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imggallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="slideshow.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+        <img src="images/download-4.jpg" alt="">
+        <img src="images/download-2.jpg" alt="">
+        <img src="images/download-3.jpg" alt="">
+        <img src="images/download.jpg" alt="">
+        <img src="images/images-1.jpg" alt="">
+    </div>
+    
+    <div class="column">
+        <img src="images/images-10.jpg" alt="">
+        <img src="images/images-11.jpg" alt="">
+        <img src="images/images-12.jpg" alt="">
+        <img src="images/images-13.jpg" alt="">
+        <img src="images/images-14.jpg" alt="">
+    </div> 
+     
+    <div class="column">
+        <img src="images/images-15.jpg" alt="">
+        <img src="images/images-16.jpg" alt="">
+        <img src="images/images-2.jpg" alt="">
+        <img src="images/images-3.jpg" alt="">
+        <img src="images/images-4.jpg" alt="">
+    </div>
+    
+    <div class="column">
+        <img src="images/images-5.jpg" alt="">
+        <img src="images/images-6.jpg" alt="">
+        <img src="images/images-7.jpg" alt="">
+        <img src="images/images-8.jpg" alt="">
+        <img src="images/images-9.jpg" alt="">
+    </div>
+  </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Teo Berbic</p>
+    </footer>
+</body>
+</html>

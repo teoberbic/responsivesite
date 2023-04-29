@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/OVO-Logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video-gallery.css">
+    <title>Drake Video Gallery</title>
+
+
+</head>
+<body>
+    <header>
+        <img src="images/OVO-Logo.png" alt="">
+        <h2>Drake Video Gallery</h2>
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imggallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="slideshow.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#vid1">Video 1</a></li>
+            <li><a href="#vid2">Video 2</a></li>
+            <li><a href="#vid3">Video 3</a></li>
+            <li><a href="#vid4">Video 4</a></li>
+            <li><a href="#vid5">Video 5</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <article id="vid1">
+            <h4>Video 1</h4>
+            <div class="videowrapper">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/UBTqCqQl2fY" title="A Moody Conversation™ ft. Lil Yachty &amp; Drake | Ep1 | FUTUREMOOD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="caption"></div>
+        </article>
+        <article id="vid2">
+            <h4></h4>
+            <div class="videowrapper">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/vFGWIhnE3i4" title="DRAKE: Sundae Conversation with Caleb Pressley" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="caption"></div>
+        </article>
+        <article id="vid3">
+            <h4></h4>
+            <div class="videowrapper">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/DOEDtqdbWAg" title="Nardwuar vs. Drake (2016)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="caption"></div>
+        </article>
+        <article id="vid4">
+            <h4></h4>
+            <div class="videowrapper">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/-HAuK8Z6q6I" title="DRAKE - ARTIST OF THE DECADE (Acceptance Speech)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="caption"></div>
+        </article>
+        <article id="vid5"> 
+            <h4></h4>
+            <div class="videowrapper">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/-I0mCWDtFCw" title="Drake&#39;s Dad Hasn&#39;t Gotten Around to Listening to Views" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="caption"></div>
+        </article>
+        
+        <div><button onclick="topFunction()" id="cornerBtn" title="Go to top"><i class="fa-duotone fa-angle-up"></i></button></div>
+    
+    </main>
+    
+    
+    <footer>
+    <p>&copy; <span id="copyright"></span> Teo Berbic</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/video-gallery.js"></script>
+</body>
+</html>

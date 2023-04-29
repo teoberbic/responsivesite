@@ -1,0 +1,155 @@
+html {
+    background-color: red;
+    background-image: url('../images/download-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+header h2 {
+    font-size: 250%;
+}
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav {
+    flex: 0 1 300px;
+}
+
+nav ul {
+    list-style: none;
+    position: sticky;
+    top: 5px;
+}
+
+nav li {
+    width: 80%;
+    border: 1px solid gold;
+    margin-top: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+}
+nav a:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: ghostwhite;
+}
+nav a:link, nav a:visited {
+    color: whitesmoke;
+}
+
+
+nav li a:hover {
+    cursor: pointer;
+    color: gold;
+    text-decoration: underline;
+}
+
+main {
+    flex: 0 1 800px;
+}
+
+article {
+    padding: 4vh 2vh;
+    background-color: cornsilk;
+    margin-bottom: 2vh;
+    border: 1px solid gold;
+    color: black;
+}
+
+header img {
+    max-width: 200px;
+    margin: 2vh;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+    box-shadow: 5px 5px 15px 10px #660000;
+    background-color: black;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    margin: 2vh 0;
+}
+
+#cornerBtn {
+    /*display: none !important;*/
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: yellow;
+    font-size: 110%;
+    font-weight: bold;
+    transition: all 300ms;
+    border-radius: 50%;
+}
+
+#cornerBtn:hover {
+    background-color: yellow;
+    color: gold;
+    padding: 15px;
+
+}
+
+footer {
+    padding: 3vh 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 85%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    #nav_list {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .videowrapper {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
